@@ -1,0 +1,41 @@
+
+
+deploy-app-be/node_modules
+deploy-app-be/dist
+deploy-app-be/.env
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+deploy-app-fe/node_modules
+deploy-app-fe/.pnp
+deploy-app-fe/.pnp.js
+
+# testing
+deploy-app-fe/coverage
+
+# next.js
+deploy-app-fe/.next/
+deploy-app-fe/out/
+
+# production
+deploy-app-fe/build
+
+# misc
+deploy-app-fe/.DS_Store
+deploy-app-fe/*.pem
+
+# debug
+deploy-app-fe/npm-debug.log*
+deploy-app-fe/yarn-debug.log*
+deploy-app-fe/yarn-error.log*
+
+# local env files
+deploy-app-fe/.env*.local
+
+# vercel
+deploy-app-fe/.vercel
+
+# typescript
+deploy-app-fe/*.tsbuildinfo
+deploy-app-fe/next-env.d.ts
