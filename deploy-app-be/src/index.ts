@@ -11,7 +11,7 @@ app.use(cors({
 
 
 app.get("/", (_req: Request, res: Response, _next: NextFunction) => {
-    res.send('hello world')
+    res.send('hello world123')
 });
 app.get("/user", async(req: Request, res: Response, next: NextFunction) => {
     const user = await prisma.user.findFirst({
