@@ -3,12 +3,12 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 export default function Home() {
-  const [name, setName] = useState('')
+  const [user, setUser] = useState('')
 
   const getName = async () => {
-    const data = await axios.get('http://localhost:8080/name',{
+    const data = await axios.get('http://localhost:8080/user',{
     })
-    setName(data.data.name)
+    setUser(data.data.data.name)
   }
 
   useEffect(() => {
@@ -17,6 +17,6 @@ export default function Home() {
   
 
   return (
-    <div>{name}</div>
+    <div>{user}</div>
   )
 }
