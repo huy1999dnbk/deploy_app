@@ -4,7 +4,6 @@ import axios from 'axios'
 
 export default function Home() {
   const [user, setUser] = useState('')
-
   const getName = async () => {
     const data = await axios.get('http://localhost:8080/user',{
     })
@@ -15,7 +14,6 @@ export default function Home() {
     getName()
   }, [])
   
-
   return (
     <div>{user}</div>
   )
